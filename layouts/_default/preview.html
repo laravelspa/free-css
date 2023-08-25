@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <article class="max-w-full">
+    <header>
+      {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
+        {{ partial "breadcrumbs.html" . }}
+      {{ end }}
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        {{ .Title | emojify }}
+      </h1>
+    </header>
+    <section class="redirect max-w-full mt-6 prose dark:prose-invert">
+      <div>
+        <!-- Ads After Recent Templates -->
+        {{ partial "ads/redirectPageSideOne.html" . }}
+      </div>
+      <div id="redirect"></div>
+      <div>
+        <!-- Ads After Recent Templates -->
+        {{ partial "ads/redirectPageSideTwo.html" . }}
+      </div>
+    </section>
+    <section class="flex justify-center">
+      
+    </section>
+    <section class="max-w-full mt-6 prose dark:prose-invert">
+      <iframe id="myIframe" 
+      src ="https://example.com?user="
+      frameborder="0"
+      style="width: 100%; height: 100vh;">
+    </iframe>
+    </section>
+    <footer class="pt-8">
+      {{ partial "sharing-links.html" . }}
+    </footer>
+  </article>
+  <script>
+    function iframeDidLoad() {
+        let url = new URL(window.location.href);
+        let p = url.searchParams.get("p");
+        console.log(p);
+        document.getElementById('myIframe').setAttribute('src', p);
+  }
+  </script>
+{{ end }}

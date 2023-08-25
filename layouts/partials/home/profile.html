@@ -1,5 +1,6 @@
 <div class="max-w-full prose dark:prose-invert flex flex-col items-center justify-center text-center">
     <!-- Ads Top -->
+    {{ partial "ads/topWebsite.html" . }}
 </div>
 <article
   class="{{ if not .Site.Params.homepage.showRecent }}
@@ -35,12 +36,14 @@
   <section class="prose dark:prose-invert">{{ .Content | emojify }}</section>
 </article>
 <div class="max-w-full prose dark:prose-invert flex flex-col items-center justify-center text-center">
-  <!-- Ads Down -->
+  <!-- Ads After Logo -->
+  {{ partial "ads/afterLogo.html" . }}
 </div>
 <section>
   {{ partial "recent-articles/main.html" . }}
 </section>
 
 <div class="max-w-full prose dark:prose-invert flex flex-col items-center justify-center text-center">
-  <!-- Ads Down Articles -->
+  <!-- Ads After Recent Templates -->
+  {{ partial "ads/afterRecentTemplates.html" . }}
 </div>

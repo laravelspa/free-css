@@ -1,7 +1,8 @@
 {{ define "main" }}
 {{ .Scratch.Set "scope" "single" }}
 <div class="max-w-full prose dark:prose-invert flex flex-col items-center justify-center text-center">
-  <!-- Ads Top Article -->
+  <!-- Ads Before Article -->
+  {{ partial "ads/beforeArticle.html" . }}
 </div>
 <article>
   {{ if .Params.showHero | default (.Site.Params.article.showHero | default false) }}
@@ -34,22 +35,21 @@
         lg:top-[140px] {{ else }} lg:top-10 {{ end }}">
 
         {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in
-        .TableOfContents "<ul") }} {{ partial "toc.html" . }} {{ end }} {{ if .Site.Params.article.showRelatedPosts |
+        .TableOfContents "<ul") }} {{ partial "ads/sidebar.html" . }} {{ end }} {{ if .Site.Params.article.showRelatedPosts |
           default false }} sd {{ end }} </div>
       </div>
       {{ end }}
       <div class="min-w-0 min-h-0 max-w-prose">
         {{ partial "series.html" . }}
         <div class="max-w-full prose dark:prose-invert flex flex-col items-center justify-center text-center">
-          <!-- Ads Bottom Article Header -->
-        </div>
-        <div class="max-w-full prose dark:prose-invert flex flex-col items-center justify-center text-center">
-          <!-- Ads bottom Article Header -->
+          <!-- Ads After Article Header -->
+          {{ partial "ads/afterArticleHeader.html" . }}
         </div>
         {{ replace .Content "<!--adsense-->" (partial "adsense-inarticle.html" .) | emojify }}
         </br></br>
         <div class="max-w-full prose dark:prose-invert flex flex-col items-center justify-center text-center">
-          <!-- Ads Article Footer -->
+          <!-- Ads After Article -->
+          {{ partial "ads/afterArticle.html" . }}
         </div>
         {{ partial "series-closed.html" . }}
       </div>

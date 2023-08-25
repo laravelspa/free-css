@@ -11,24 +11,29 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
+  name = "Free Templates"
+  pageRef = "templates"
+  weight = 10
+
+[[main]]
   name = "Blog"
   pageRef = "blog"
-  weight = 10
+  weight = 20
 
 [[main]]
   name = "Categories"
   pageRef = "categories"
-  weight = 20
+  weight = 30
 
 [[main]]
   name = "Tags"
   pageRef = "tags"
-  weight = 30
-
-[[main]]
-  name = "Series"
-  pageRef = "series"
   weight = 40
+
+#[[main]]
+#  name = "Series"
+#  pageRef = "series"
+#  weight = 50
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
@@ -44,10 +49,10 @@
    pageRef = "terms-and-conditions"
    weight = 20
 
-[[footer]]
-   name = "Subscribe"
-   pageRef = "subscribe"
-   weight = 30
+#[[footer]]
+#   name = "Subscribe"
+#   pageRef = "subscribe"
+#   weight = 30
 
 [[footer]]
    name = "Contact Us"

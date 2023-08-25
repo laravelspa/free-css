@@ -12,7 +12,7 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
 
-mainSections = ["blog"]
+mainSections = ["templates"]
 # robots = ""
 # disableImageOptimization = false
 
@@ -24,7 +24,7 @@ mainSections = ["blog"]
 # smartTOCHideUnfocusedChildren = true
 
 [header]
-  layout = "fixed" # valid options: basic, fixed
+  layout = "basic" # valid options: basic, fixed
 
 [footer]
  # showMenu = true
@@ -37,15 +37,15 @@ mainSections = ["blog"]
   layout = "profile" # valid options: page, profile, hero, card, background, custom
   homepageImage = "img/background.png" # used in: hero, and card
   showRecent = true
-  showRecentItems = 9
+  showRecentItems = 3
   showMoreLink = true
-  showMoreLinkDest = "blog"
+  showMoreLinkDest = "templates"
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = false # only used when layout equals background
 
 [article]
-  showDate = false
+  showDate = true
   showViews = false
   showLikes = false
   showDateUpdated = false
@@ -64,7 +64,7 @@ mainSections = ["blog"]
   showPagination = true
   invertPagination = false
   showReadingTime = false
-  showTableOfContents = false
+  showTableOfContents = true
   showRelatedContent = true
   relatedContentLimit = 3
   showTaxonomies = true 
@@ -80,8 +80,8 @@ mainSections = ["blog"]
   #layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showSummary = false
-  showViews = true
-  showLikes = true
+  #showViews = true
+  #showLikes = true
   showTableOfContents = false
   showCards = true
   groupByYear = false
@@ -97,8 +97,8 @@ mainSections = ["blog"]
   #showHero = true
   #heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   #showBreadcrumbs = true
-  showViews = true
-  showLikes = true
+  #showViews = true
+  #showLikes = true
   #showTableOfContents = true
   cardView = false
 
@@ -106,8 +106,8 @@ mainSections = ["blog"]
   #showHero = true
   #heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   #showBreadcrumbs = true
-  showViews = true
-  showLikes = true
+  #showViews = true
+  #showLikes = true
   #showTableOfContents = true
   #groupByYear = false
   #cardViewScreenWidth = false
