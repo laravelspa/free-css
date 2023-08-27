@@ -11,24 +11,34 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Free Templates"
-  pageRef = "templates"
+  name = "Landing Pages"
+  pageRef = "landing-pages"
   weight = 10
 
 [[main]]
-  name = "Blog"
-  pageRef = "blog"
+  name = "CSS Templates"
+  pageRef = "css-templates"
   weight = 20
 
 [[main]]
-  name = "Categories"
-  pageRef = "categories"
+  name = "Blogger Templates"
+  pageRef = "blogger-templates"
   weight = 30
 
-[[main]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 40
+#[[main]]
+#  name = "Blog"
+#  pageRef = "#blog"
+#  weight = 20
+
+#[[main]]
+#  name = "Categories"
+#  pageRef = "categories"
+#  weight = 30
+
+#[[main]]
+#  name = "Tags"
+#  pageRef = "tags"
+#  weight = 40
 
 #[[main]]
 #  name = "Series"

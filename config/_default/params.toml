@@ -12,7 +12,7 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
 
-mainSections = ["templates"]
+mainSections = ["landing-pages"]
 # robots = ""
 # disableImageOptimization = false
 

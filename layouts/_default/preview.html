@@ -8,25 +8,18 @@
         {{ .Title | emojify }}
       </h1>
     </header>
-    <section class="redirect max-w-full mt-6 prose dark:prose-invert">
+    <section class="flex justify-around items-center max-w-full mt-6 prose dark:prose-invert">
       <div>
         <!-- Ads After Recent Templates -->
         {{ partial "ads/redirectPageSideOne.html" . }}
       </div>
       <div>
+        <img id="preview" src="/img/logo.png" alt="">
+      </div>
+      <div>
         <!-- Ads After Recent Templates -->
         {{ partial "ads/redirectPageSideTwo.html" . }}
       </div>
-    </section>
-    <section class="flex justify-center">
-      
-    </section>
-    <section class="max-w-full mt-6 prose dark:prose-invert">
-      <iframe id="myIframe" 
-      src ="https://example.com?user="
-      frameborder="0"
-      style="width: 100%; height: 100vh;">
-    </iframe>
     </section>
     <footer class="pt-8">
       {{ partial "sharing-links.html" . }}
@@ -36,8 +29,7 @@
       document.addEventListener("DOMContentLoaded", function(){
           let url = new URL(window.location.href);
           let p = url.searchParams.get("p");
-          // console.log(p);
-          document.getElementById('myIframe').setAttribute('src', p);        
+          document.getElementById('preview').setAttribute('src', `/img/${p}`);        
       });
   </script>
 {{ end }}

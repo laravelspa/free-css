@@ -3,12 +3,8 @@ title: "About Us"
 layout: "simple"
 ---
 
-Hi, this is Mahmoud Adel.
+Free CSS has 3533 free website templates coded using HTML & CSS in its gallery. The HTML website templates that are showcased on Free CSS.site are the best that can be found in and around the net.
 
-Welcome to Laravel SPA: home of tutorials, videos and tips about Laravel framework. Started back in 2023 as a small personal blog, it grew into a hub of useful information for all levels.
+We would personally like to thank all of the website template designers and developers for all of their hard work in creating these free website templates. Without them Free CSS would probably not exist.
 
-I also run a YouTube channel with the same name of Laravel SPA.
-
-You can follow the latest Laravel tutorials on Twitter or by subscribing to our weekly newsletter.
-
-If you want to get in touch, email dev.mahmoud.adel@gmail.com
+Free CSS Admin
