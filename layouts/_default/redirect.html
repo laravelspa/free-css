@@ -83,8 +83,11 @@
       </div>
     </section>
     <section class="flex justify-center">
-      <button id="link" style="padding: 10px; background-color: red;" onclick="visitLink()" disabled>
+      <button id="directLink" style="padding: 10px; background-color: grey; margin-right: 20px;" onclick="visitDirectLink()" disabled>
         The link is being processed, please wait.
+      </button>
+      <button id="link" style="padding: 10px; background-color: grey;" onclick="visitLink()" disabled>
+        processing, please wait.
       </button>
     </section>
     <section class="max-w-full mt-6 prose dark:prose-invert">
@@ -116,13 +119,16 @@ const COLOR_CODES = {
   }
 };
 
-const TIME_LIMIT = 20;
+const TIME_LIMIT = 2;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
 let remainingPathColor = COLOR_CODES.info.color;
+let directLinkButton = document.getElementById("directLink");
 let linkButton = document.getElementById("link");
 
+        const url = new URL(window.location.href);
+        const r = url.searchParams.get("r");
 document.getElementById("redirect").innerHTML = `
 <div class="base-timer">
   <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -151,9 +157,16 @@ startTimer();
 
 function onTimesUp() {
   clearInterval(timerInterval);
+  directLinkButton.removeAttribute('disabled');
+  directLinkButton.style.background='green';
+  directLinkButton.innerHTML = 'First Download Link';
+  linkButton.style.background='red';
+  if(!r) {
+    linkButton.innerHTML = 'no download link';
+    return;
+  }
   linkButton.removeAttribute('disabled');
-  linkButton.style.background='green';
-  linkButton.innerHTML = 'Click here to Download Now';
+  linkButton.innerHTML = 'Second Download Link';
 }
 
 function startTimer() {
@@ -217,9 +230,12 @@ function setCircleDasharray() {
     .setAttribute("stroke-dasharray", circleDasharray);
 }
     function visitLink(){
-        var url = new URL(window.location.href);
-        var r = url.searchParams.get("r");
-        window.location.replace(r)
+        if(r) {
+          window.location.replace(r)
+        }
+    }
+    function visitDirectLink(){
+      window.open('https://google.com', '_blank')
     }
   </script>
 {{ end }}

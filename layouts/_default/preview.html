@@ -29,7 +29,9 @@
       document.addEventListener("DOMContentLoaded", function(){
           let url = new URL(window.location.href);
           let p = url.searchParams.get("p");
-          document.getElementById('preview').setAttribute('src', `/img/${p}`);        
+          if(p) {
+            document.getElementById('preview').setAttribute('src', `/img/${p}`);
+          }
       });
   </script>
 {{ end }}
