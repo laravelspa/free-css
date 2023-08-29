@@ -71,12 +71,12 @@
       {{ partial "ads/topWebsite.html" . }}
     </section>
     <section class="redirect block md:flex max-w-full text-center justify-around align-center max-w-full mt-6 prose dark:prose-invert">
-      <div class="w-full flex justify-center">
+      <div class="w-full max-w-full flex flex-col flex-wrap justify-center items-center">
         <!-- Ads After Recent Templates -->
         {{ partial "ads/redirectPageSideOne.html" . }}
       </div>
       <div class="w-full flex justify-center" id="redirect"></div>
-      <div class="w-full flex justify-center">
+      <div class="w-full max-w-full flex flex-col flex-wrap justify-center items-center">
         <!-- Ads After Recent Templates -->
         {{ partial "ads/redirectPageSideTwo.html" . }}
       </div>
@@ -122,7 +122,7 @@ const COLOR_CODES = {
   }
 };
 
-const TIME_LIMIT = 2;
+const TIME_LIMIT = 20;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;

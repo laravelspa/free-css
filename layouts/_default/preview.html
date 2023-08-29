@@ -22,7 +22,7 @@
       <div class="w-full flex justify-center">
         <img id="preview" src="/img/logo.png" alt="">
       </div>
-      <div class="w-full flex justify-center max-w-full">
+      <div class="w-full max-w-full flex flex-col flex-wrap justify-center items-center">
         <!-- Ads After Recent Templates -->
         {{ partial "ads/redirectPageSideTwo.html" . }}
       </div>
@@ -42,7 +42,7 @@
           let url = new URL(window.location.href);
           let p = url.searchParams.get("p");
           if(p) {
-            document.getElementById('preview').setAttribute('src', `/img/${p}`);
+            document.getElementById('preview').setAttribute('src', `${p}`);
           }
       });
   </script>
