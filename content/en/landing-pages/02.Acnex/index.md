@@ -4,12 +4,12 @@ date: 2023-08-29
 draft: false
 slug: "acnex-landing-page"
 ---
-__Acnex__ a __landing page__ designed using the following techniques:
+### __Acnex__ a __landing page__ designed using the following techniques:
 - {{< icon "code" >}}: HTML
 - {{< icon "eye" >}}: CSS
 - {{< icon "wand-magic-sparkles" >}}: Javascript  
 
-It is characterized by the following:
+### It is characterized by the following:
 - {{< icon "star" >}}: Responsive
 - {{< icon "heart-empty" >}}:  Popup
 
