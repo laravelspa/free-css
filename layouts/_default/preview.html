@@ -8,19 +8,31 @@
         {{ .Title | emojify }}
       </h1>
     </header>
-    <section class="flex justify-around items-center max-w-full mt-6 prose dark:prose-invert">
+    <section class="flex justify-center max-w-full mt-6 prose dark:prose-invert">
       <div>
+        <!-- Ads After Recent Templates -->
+        {{ partial "ads/topWebsite.html" . }}
+      </div>
+    </section>
+    <section class="block md:flex justify-around max-w-full mt-6 prose dark:prose-invert">
+      <div class="w-full flex justify-center">
         <!-- Ads After Recent Templates -->
         {{ partial "ads/redirectPageSideOne.html" . }}
       </div>
-      <div>
+      <div class="w-full flex justify-center">
         <img id="preview" src="/img/logo.png" alt="">
       </div>
-      <div>
+      <div class="w-full flex justify-center">
         <!-- Ads After Recent Templates -->
         {{ partial "ads/redirectPageSideTwo.html" . }}
       </div>
     </section>
+    <section class="flex justify-center max-w-full mt-6 prose dark:prose-invert">
+      <div>
+        <!-- Ads After Recent Templates -->
+        {{ partial "ads/beforeArticle.html" . }}
+      </div>
+      </section>
     <footer class="pt-8">
       {{ partial "sharing-links.html" . }}
     </footer>

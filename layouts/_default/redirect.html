@@ -2,11 +2,6 @@
 <style>
   .redirect {
   font-family: sans-serif;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 70vh;
-  place-items: center;
 }
 
 .base-timer {
@@ -71,20 +66,24 @@
         {{ .Title | emojify }}
       </h1>
     </header>
-    <section class="redirect max-w-full mt-6 prose dark:prose-invert">
-      <div>
+    <section class="redirect block md:flex max-w-full text-center justify-around align-center max-w-full mt-6 prose dark:prose-invert">
+      <div class="w-full flex justify-center">
         <!-- Ads After Recent Templates -->
         {{ partial "ads/redirectPageSideOne.html" . }}
       </div>
-      <div id="redirect"></div>
-      <div>
+      <div class="w-full flex justify-center" id="redirect"></div>
+      <div class="w-full flex justify-center">
         <!-- Ads After Recent Templates -->
         {{ partial "ads/redirectPageSideTwo.html" . }}
       </div>
     </section>
+    <section class="flex justify-center max-w-full mt-6 prose dark:prose-invert">
+      <!-- Ads After Recent Templates -->
+      {{ partial "ads/afterLogo.html" . }}
+    </section>
     <section class="flex justify-center">
       <button id="directLink" style="padding: 10px; background-color: grey; margin-right: 20px;" onclick="visitDirectLink()" disabled>
-        The link is being processed, please wait.
+        processing, please wait.
       </button>
       <button id="link" style="padding: 10px; background-color: grey;" onclick="visitLink()" disabled>
         processing, please wait.
@@ -235,7 +234,7 @@ function setCircleDasharray() {
         }
     }
     function visitDirectLink(){
-      window.open('https://google.com', '_blank')
+      window.open('https://bit.ly/first-link-download', '_blank')
     }
   </script>
 {{ end }}
