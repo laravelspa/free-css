@@ -15,8 +15,8 @@ slug: "acnex-landing-page"
 
 <!--adsense-->
 
-{{< button href="https://free-templates.site/preview?p=https://i.imgur.com/XN8BeCK.jpg" target="_blank" >}}
+{{< button href="/preview?p=https://i.imgur.com/XN8BeCK.jpg" target="_blank" >}}
 Preview
-{{< /button >}} &nbsp; {{< button href="https://free-templates.site/redirect?r=https://www.mediafire.com/file/1idgvpqfi37ygnc/Acnex.zip/file" target="_self" >}}
+{{< /button >}} &nbsp; {{< button href="/redirect?r=https://www.mediafire.com/file/1idgvpqfi37ygnc/Acnex.zip/file" target="_self" >}}
 Download
 {{< /button >}}

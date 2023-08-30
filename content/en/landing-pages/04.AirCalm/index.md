@@ -15,8 +15,8 @@ slug: "airCalm-landing-page"
 
 <!--adsense-->
 
-{{< button href="https://free-templates.site/preview?p=https://i.imgur.com/8zWZExN.png" target="_blank" >}}
+{{< button href="/preview?p=https://i.imgur.com/8zWZExN.png" target="_blank" >}}
 Preview
-{{< /button >}} &nbsp; {{< button href="https://free-templates.site/redirect?r=https://www.mediafire.com/file/q1ggykh6mk72ioy/AirCalm.zip/file" target="_self" >}}
+{{< /button >}} &nbsp; {{< button href="/redirect?r=https://www.mediafire.com/file/q1ggykh6mk72ioy/AirCalm.zip/file" target="_self" >}}
 Download
 {{< /button >}}

@@ -15,8 +15,8 @@ slug: "agroup-landing-page"
 
 <!--adsense-->
 
-{{< button href="https://free-templates.site/preview?https://i.imgur.com/jMtthZb.jpg" target="_blank" >}}
+{{< button href="/preview?https://i.imgur.com/jMtthZb.jpg" target="_blank" >}}
 Preview
-{{< /button >}} &nbsp; {{< button href="https://free-templates.site/redirect?r=https://www.mediafire.com/file/qw1528hlts568jq/AgroUp.zip/file" target="_self" >}}
+{{< /button >}} &nbsp; {{< button href="/redirect?r=https://www.mediafire.com/file/qw1528hlts568jq/AgroUp.zip/file" target="_self" >}}
 Download
 {{< /button >}}
