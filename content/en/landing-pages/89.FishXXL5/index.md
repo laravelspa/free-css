@@ -1,0 +1,22 @@
+---
+title: "FishXXL5 Landing Page"
+date: 2023-09-12
+draft: false
+slug: "FishXXL5-landing-page"
+---
+### __FishXXL5__ a __landing page__ designed using the following techniques:
+- {{< icon "code" >}}: HTML
+- {{< icon "eye" >}}: CSS
+- {{< icon "wand-magic-sparkles" >}}: Javascript  
+
+### It is characterized by the following:
+- {{< icon "star" >}}: Responsive
+- {{< icon "heart-empty" >}}:  Popup
+
+<!--adsense-->
+
+{{< button href="/preview?p=https://i.imgur.com/LvDOGYW.jpg" target="_blank" >}}
+Preview
+{{< /button >}} &nbsp; {{< button href="/redirect?r=https://www.mediafire.com/file/dcq827727frdt8e/FishXXL5.zip/file" target="_self" >}}
+Download
+{{< /button >}}
