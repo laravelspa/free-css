@@ -1,0 +1,22 @@
+---
+title: "HeartTonic Landing Page"
+date: 2023-09-20
+draft: false
+slug: "HeartTonic-landing-page"
+---
+### __HeartTonic__ a __landing page__ designed using the following techniques:
+- {{< icon "code" >}}: HTML
+- {{< icon "eye" >}}: CSS
+- {{< icon "wand-magic-sparkles" >}}: Javascript  
+
+### It is characterized by the following:
+- {{< icon "star" >}}: Responsive
+- {{< icon "heart-empty" >}}:  Popup
+
+<!--adsense-->
+
+{{< button href="/preview?p=https://i.imgur.com/Rh0yTc3.jpg" target="_blank" >}}
+Preview
+{{< /button >}} &nbsp; {{< button href="/redirect?r=https://www.mediafire.com/file/y84n0xwng3gwo0c/HeartTonic.zip/file" target="_self" >}}
+Download
+{{< /button >}}
